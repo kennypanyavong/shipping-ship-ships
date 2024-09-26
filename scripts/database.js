@@ -22,13 +22,13 @@ const database = {
 }
 
 export const getDocks = () => {
-    return [...database.docks];
+    return [...database.docks]
 }
 
 export const getHaulingShips = () => {
-    return [...database.haulers];
+    return [...database.haulers]
 }
 
 export const getShippingShips = () => {
-    return [...database.shippingShips];
+    return [...database.shippingShips]
 }

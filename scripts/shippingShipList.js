@@ -1,15 +1,18 @@
-import { getShippingShips } from "./database.js";
+import { getShippingShips } from "./database.js"
 
 export const ShippingShipList = () => {
-    const shippingShips = getShippingShips();
+    const shippingShips = getShippingShips()
 
-    let shippingShipsHTML = "<ul>";
+    let shippingShipsHTML = "<ul>"
 
     for (const ship of shippingShips) {
-        shippingShipsHTML += `<li>${ship.name} (Hauler ID: ${ship.haulerId})</li>`;
+        shippingShipsHTML += `
+            <li data-id="${ship.haulerId}" data-type="shippingShip">
+                ${ship.name}
+            </li>`
     }
 
-    shippingShipsHTML += "</ul>";
+    shippingShipsHTML += "</ul>"
 
-    return shippingShipsHTML;
+    return shippingShipsHTML
 };

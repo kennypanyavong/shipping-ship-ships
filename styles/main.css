@@ -1,0 +1,12 @@
+ul {
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+    border: 4px solid skyblue;
+    margin: 5px;
+}
